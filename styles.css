@@ -1,0 +1,728 @@
+:root {
+  --heading: 'Eczar', serif;
+  --body: 'Open sans', serif;
+  --dancing: 'Dancing Script', cursive;
+
+  /*-------- Headers----------*/
+  --h1: 4rem;
+  --h2: 2.25rem;
+  --h3: 1.5rem;
+
+  /*-------- Font Weights---------*/
+  --regular: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+  --extra-bold: 800;
+
+  /*-------- Colors ---------*/
+  --main: #2C5963;
+  --light-green: #D5E8EC;
+  --dark: #2E2E2E;
+  --light: #FFFFFF;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
+*, h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  font-family: var(--heading);
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: var(--medium);
+}
+
+h3, h4, h5, p, li {
+  font-family: var(--body);
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: var(--semi-bold);
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+p {
+  font-weight: var(--normal);
+  font-size: 1rem;
+  line-height: 200%;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: fit-content;
+}
+
+.logo {
+  font-weight: var(--semi-bold);
+  font-size: 1.25rem;
+  letter-spacing: -.095em;
+  line-height: 140%;
+  text-shadow: none;
+  color: var(--main);
+  padding-right: 1rem;
+}
+
+.logo__nav {
+  max-width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  margin: 0 auto;
+  background: var(--light-green);
+}
+
+.menu__li {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+}
+
+.menu__li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--dark);
+  font-size: .875rem;
+}
+
+#nav__button {
+  padding: .7rem 1.4rem;
+  background-color: transparent;
+  border: .3px solid var(--main);
+  border-radius: 2rem;
+  transition: all 400ms ease-in-out;
+}
+
+#nav__button:hover {
+  background: var(--main);
+  border: .3px solid var(--main);
+}
+
+.menu__li a #nav__button {
+  color: var(--main);
+  font-size: .9rem;
+  font-family: var(--body);
+}
+
+.menu__li a #nav__button:hover {
+  color: var(--light);
+}
+
+.container {
+  padding: 6rem 5rem 6rem;
+}
+
+.main-button {
+  padding: 1.25rem 3.5rem;
+  background: var(--dark);
+  border: .3px solid var(--dark);
+  color: var(--light);
+  transition: all 400ms ease-in-out;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.main-button:hover {
+  color: var(--dark);
+  border: .3px solid var(--dark);
+  background-color: transparent;
+}
+
+/*----------------- Hero Section ------------------*/
+.first {
+  background: var(--light-green);
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 5rem 0 4rem 5rem;
+}
+
+.first h1 {
+  color: var(--main);
+  line-height: 140%;
+  overflow: hidden;
+}
+
+.first p {
+  margin: 1rem 6rem 3rem 0;
+  color: #336571;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.first-image {
+  width: 567px;
+  height: 622px;
+}
+
+.second-image {
+  width: 466px;
+  height: 568px;
+  overflow: hidden;
+}
+
+.second-image img {
+ 
+}
+
+/*----------------- Brand Section (Second section)------------------*/
+.second {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.second, .third {
+  background: var(--light);
+}
+
+.fifth, .sixth, .seventh {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #D5E8EC;
+}
+
+.brand-asset img {
+  width: 180px;
+}
+
+/*----------------- Why Choose Us Section (Third) ----------------*/
+.third {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  gap: 7rem;
+  align-content: center;
+  
+}
+
+.right-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-column p {
+  margin: 1rem 8rem 3rem 0;
+  font-size: 1.15rem;
+}
+
+/*----------------- How we will help you Section (Fourth) ----------------*/
+.fourth {
+  background: var(--light-green);
+  height: 100%;
+}
+
+.section__header {
+  max-width: 31.25rem;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.help__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.help__list article {
+  background: var(--light);
+  padding: 2rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+  overflow: hidden;
+}
+
+.help__list article:hover {
+  transform: scale(1.05);
+  
+}
+
+.help__list article h3 {
+  margin: 1rem 0 1.5rem;
+}
+
+.audience-icon {
+  width: 94px;
+  height: 94px;
+  border-radius: 50%;
+  background-color: var(--light-green);
+  margin: auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.audience-icon img {
+  width: 42px;
+}
+
+/*---------- People using our platform Section ------------*/
+.people__all {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  gap: 3.5rem;
+}
+
+.people__lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2.5rem;
+}
+
+.people__list {
+  display: grid;
+  row-gap: 3.5rem;
+  height: fit-content;
+}
+
+.people__list article {
+  height: fit-content;
+}
+
+.people__list p {
+  margin: 1rem 3.3rem 1.4rem 0;
+}
+
+.people__list a {
+  font-family: var(--dancing);
+  color: var(--main);
+}
+
+/*---------- The right plan for your business Section ------------*/
+.plan__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  padding: 3rem;
+}
+
+.list {
+  display: grid;
+  justify-content: center;
+  padding: 2rem 3rem;
+  box-shadow: 0 0 70px 5px rgba(0, 0, 0, 0.06);
+}
+
+.plan__list .list li {
+  margin-top: 1.25rem;
+}
+
+.plan__list .list h3 {
+  margin-top: 1rem;
+}
+
+.plan__list .list p {
+  font-family: var(--dancing);
+  font-size: 1.2rem;
+}
+
+.plan__list .list p, .plan__list .list h2 {
+  text-align: center;
+}
+
+.plan__list .list h3 {
+  font-size: 1.1rem
+}
+
+.list .main-button {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+/*---------- Meet our team Section ------------*/
+hr {
+  border: 2px solid var(--light-green);
+}
+
+.team__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.team__list article h3 {
+  margin-top: 2rem;
+}
+
+.team__list article div {
+  border-radius: .5rem;
+  transition: all 400ms ease-in-out;
+}
+
+.team__list article div:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.team__list article {
+  padding: .5rem;
+}
+
+.team__list article .icons {
+  padding: 0;
+  margin-top: .5rem;
+}
+
+/*---------- Testimonials Section ------------*/
+.eighth {
+  background: var(--light-green);
+}
+
+.testimonial__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 4rem;
+  max-width: 31.25rem;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.last-child {
+  margin-top: 1rem;
+}
+
+.user-info {
+  display: flex;
+  gap: 1rem;
+}
+
+.user-info img {
+  width: 62px;
+  height: 62px;
+  border-radius: .5rem;
+}
+
+.user-info p:first-of-type {
+  font-size: 1.125rem;
+  font-weight: var(--medium);
+}
+
+.user-info p:last-of-type {
+  font-size: .8rem;
+}
+
+.testimonials article {
+  background: var(--light);
+  padding: 2rem;
+  border-radius: 1.5rem 0;
+}
+
+.uil.uil-star {
+  font-size: 1.1rem;
+  overflow: hidden;
+}
+
+.info-star {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.next-icons {
+  color: var(--dark);
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.star {
+  color: var(--dark);
+  font-size: 1rem;
+}
+
+/*---------- Footer Section ------------*/
+footer {
+  background: var(--main);
+  color: var(--light);
+}
+
+.footer__container {
+  padding: 4rem 5rem 8rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+footer .logo {
+  color: var(--light);
+}
+
+footer li {
+  color: var(--light-green);
+  font-weight: var(--normal);
+  margin-top: 2rem;
+}
+
+footer li:not(:first-of-type) {
+  margin-top: 1rem;
+}
+
+.first-column p:last-child {
+  margin-top: 1.5rem;
+  margin-right: 3.5rem;
+  color: var(--light-green);
+}
+
+.fourth-column form {
+  margin-top: 2rem;
+}
+
+form input {
+  padding: 0.75rem;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  border: none;
+}
+
+form #submit {
+  background: var(--dark);
+  margin: 0;
+  color: var(--light);
+}
+
+.copyright {
+  padding: 1.2rem;
+  margin: 0 5rem 1.2rem;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), #01636C;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .logo__nav {
+    padding: 1rem 3rem;
+  }
+
+  .menu__li {
+    gap: 3.5rem;
+  }
+
+  h1 {
+    font-size: 3.8rem;
+  }
+
+  .container {
+    padding: 5rem 3rem;
+  }
+
+  .main-button {
+    padding: 1.2rem 3rem;
+  }
+
+  .first {
+    padding: 5rem 0 5rem 3rem;
+  }
+
+  .list {
+    padding: 2rem;
+  }
+
+  .plan__list {
+    padding: 2rem 1.8rem 3rem;
+  }
+
+}
+
+/*----------TABLET VIEW-----------*/
+@media screen and (max-width: 1024px) {
+  /*---------General----------*/
+  p {
+    font-size: .9rem;
+  }
+
+
+  /*---------Navigation----------*/
+  .logo {
+    font-size: 1.1rem;
+  }
+
+  .menu__li {
+    gap: 3rem;
+  }
+
+
+  /*---------Hero----------*/
+
+  .first {
+    padding: 5rem 0 4rem 3rem;
+  }
+
+  .first p {
+    margin-right: 2rem;
+  }
+  .first h1 {
+    font-size: 3.2rem;
+  }
+
+  .first-image, .second-image {
+    width: 70%;
+  }
+
+  /*-------Brand SECTION---------*/
+  .brand-asset img {
+    width: 150px;
+  }
+
+  /*-----------Why choose us--------------*/
+  .third {
+    gap: 5rem;
+  }
+
+  .right__column p {
+    margin: 1rem 6rem 3rem 0;
+    font-size: 1rem;
+  }
+
+  /*-------How we will help you SECTION---------*/
+  .help__list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*--------People using our platform SECTION---------*/
+  .people__all {
+    gap: 3rem;
+  }
+
+  .people__lists {
+    column-gap: 1rem;
+  }
+
+  .people__list p {
+    margin-right: 2.5rem;
+  }
+
+  /*--------The right plan for your business SECTION---------*/
+  .plan__list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+  }
+
+  .first-column p:last-child {
+    margin-right: 1rem;
+  }
+
+}
+
+/*---------- SMALLER TABLET-----------*/
+@media screen and (max-width: 700px) {
+  .menu__li {
+    display: none;
+  }
+
+  .second {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /*--------- Why choose us section (Third) --------*/
+  .third {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 5rem;
+    justify-items: center;
+  }
+
+  .left-column img {
+    width: 400px;
+  }
+
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-column p {
+    margin-right: 0;
+  }
+
+  /*--------- How we will help you (Fourth) --------*/
+  .help__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*----------MOBILE VIEW-----------*/
+@media screen and (max-width: 550px) {
+  .menu__li {
+    display: none;
+  }
+
+  .container {
+    padding: 5rem 1rem 5rem;
+  }
+
+  /*----------Hero Section-----------*/
+  .first {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%;
+    padding: 3rem 0 3rem 1rem;
+  }
+
+  .first__column {
+    padding-right: 1rem;
+  }
+
+  .second__column {
+    grid-row: 1;
+    
+  }
+
+  /*---------Brand Asset (Second)-----------*/
+  .second {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*---------Why choose us section (Third)-----------*/
+  .right-column p {
+    margin: 1rem 1.5rem 3rem;
+    font-size: 1.15rem;
+  }
+}
