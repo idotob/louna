@@ -117,6 +117,10 @@ img {
   font-size: .875rem;
 }
 
+.uil.uil-bars {
+  display: none;
+}
+
 #nav__button {
   padding: .7rem 1.4rem;
   background-color: transparent;
@@ -166,7 +170,8 @@ img {
   background: var(--light-green);
   display: grid;
   grid-template-columns: 40% 60%;
-  padding: 5rem 0 4rem 5rem;
+  padding: 6rem 0 6rem 5rem;
+  gap: 2rem;
 }
 
 .first h1 {
@@ -182,24 +187,10 @@ img {
 
 .images {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 50% 50%;
   gap: 1.25rem;
 }
 
-.first-image {
-  width: 567px;
-  height: 622px;
-}
-
-.second-image {
-  width: 466px;
-  height: 568px;
-  overflow: hidden;
-}
-
-.second-image img {
- 
-}
 
 /*----------------- Brand Section (Second section)------------------*/
 .second {
@@ -411,8 +402,7 @@ hr {
 .testimonial__header {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin-bottom: 4rem;
+  
   max-width: 31.25rem;
 }
 
@@ -420,6 +410,7 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  margin-top: 4rem;
 }
 
 .last-child {
@@ -599,7 +590,8 @@ form #submit {
   }
 
   .first-image, .second-image {
-    width: 70%;
+    width: 100%;
+    height: fit-content;
   }
 
   /*-------Brand SECTION---------*/
@@ -651,8 +643,29 @@ form #submit {
 
 }
 
+
+
 /*---------- SMALLER TABLET-----------*/
 @media screen and (max-width: 700px) {
+  .uil.uil-bars {
+    display: block;
+    font-size: 1.6rem;
+    color: var(--main);
+    border: none;
+  }
+
+  .first {
+    grid-template-columns: 1fr;
+  }
+
+  .second__column {
+    grid-row: 1;
+  }
+
+  .first__column {
+    padding-right: 3rem;
+  }
+
   .menu__li {
     display: none;
   }
@@ -687,10 +700,52 @@ form #submit {
   .help__list {
     grid-template-columns: 1fr;
   }
+
+  /*--------- People using our platform (Fifth) --------*/
+  .people__all {
+    grid-template-columns: 1fr;
+  }
+
+  .people__list article p {
+    margin-right: 2rem;
+  }
+
+  /*--------- The right plan for your business (Sixth) --------*/
+  .plan__list {
+    grid-template-columns: 1fr;
+  }
+
+  /*--------- Meet our team (Seventh) --------*/
+  .team__list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*--------- Testimonial (Eighth) --------*/
+  .testimonial__header {
+    margin: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .testimonials {
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+  }
+
+  .footer__container {
+    padding: 3rem 3rem 6rem;
+    grid-template-columns: 1fr 1fr;
+  }
 }
+
+
 
 /*----------MOBILE VIEW-----------*/
 @media screen and (max-width: 550px) {
+  .logo__nav {
+    padding: 1rem;
+  }
+
   .menu__li {
     display: none;
   }
@@ -724,5 +779,59 @@ form #submit {
   .right-column p {
     margin: 1rem 1.5rem 3rem;
     font-size: 1.15rem;
+  }
+
+  /*------Footer------*/
+  .footer__container {
+    padding: 3rem 1rem 6rem;
+  }
+}
+
+
+
+/*------------SMALLER PHONES---------*/
+@media screen and (max-width: 400px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+
+  .logo__nav {
+    padding: 1rem;
+  }
+
+  .left-column img {
+    width: 300px;
+  }
+
+  .right-column p {
+    font-size: 1rem;
+  }
+
+
+/*------Meet our team (seventh)------*/
+  .team__list {
+    grid-template-columns: 1fr;
+  }
+
+
+  /*------Testimonial (Eigth)------*/
+  .info-star {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  /*------Footer------*/
+  .copyright {
+    margin: 0 2rem 1.2rem;
+  }
+
+  .footer__container {
+    gap: 3rem;
   }
 }
