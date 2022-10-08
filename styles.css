@@ -858,6 +858,16 @@ form #submit {
     font-size: .9rem;
   }
 
+  /*------People using our platform (fifth)------*/
+  .people__lists {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .people__list article p {
+    margin-right: 0;
+  }
+
 
 /*------Meet our team (seventh)------*/
   .team__list {
