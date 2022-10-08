@@ -758,16 +758,20 @@ form #submit {
   .first {
     grid-template-columns: 1fr;
     grid-template-rows: 50% 50%;
-    padding: 3rem 0 3rem 1rem;
+    padding: 5rem 0 3rem 1rem;
+    position: relative;
   }
 
   .first__column {
     padding-right: 1rem;
   }
 
+
+
   .second__column {
     grid-row: 1;
-    
+    margin: 0;
+    padding: 0;
   }
 
   /*---------Brand Asset (Second)-----------*/
