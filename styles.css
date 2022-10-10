@@ -221,7 +221,6 @@ img {
   grid-template-columns: 35% 65%;
   gap: 7rem;
   align-content: center;
-  
 }
 
 .right-column {
@@ -353,7 +352,7 @@ img {
 }
 
 .plan__list .list h3 {
-  font-size: 1.1rem
+  font-size: 1.1rem;
 }
 
 .list .main-button {
@@ -636,7 +635,6 @@ form #submit {
   .first-column p:last-child {
     margin-right: 1rem;
   }
-
 }
 
 
