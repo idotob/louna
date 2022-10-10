@@ -267,7 +267,6 @@ img {
 
 .help__list article:hover {
   transform: scale(1.05);
-  
 }
 
 .help__list article h3 {
@@ -783,6 +782,15 @@ form #submit {
     padding: 0;
   }
 
+  /*--------How we will help you (Fourth)-------*/
+  .help__list {
+    padding: 0;
+  }
+
+  .help__list article:hover {
+    transform: none;
+  }
+
 
   /*---------Brand Asset (Second)-----------*/
   .second {
@@ -849,6 +857,7 @@ form #submit {
   }
 
   .right-column p {
+    margin: 1rem 0 3rem;
     font-size: .9rem;
   }
 
@@ -862,8 +871,13 @@ form #submit {
     margin-right: 0;
   }
 
+  /*------Meet our team (seventh)------*/
+  .plan__list {
+    padding: 1rem;
+    gap: 1rem;
+  }
 
-/*------Meet our team (seventh)------*/
+  /*------Meet our team (seventh)------*/
   .team__list {
     grid-template-columns: 1fr;
   }
