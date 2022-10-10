@@ -170,7 +170,7 @@ img {
   background: var(--light-green);
   display: grid;
   grid-template-columns: 40% 60%;
-  padding: 6rem 0 6rem 5rem;
+  padding: 6rem 0 7rem 5rem;
   gap: 2rem;
   min-height: 30rem;
 }
@@ -547,7 +547,7 @@ form #submit {
   }
 
   .first {
-    padding: 5rem 0 5rem 3rem;
+    padding: 5rem 0 6rem 3rem;
   }
 
   .list {
@@ -580,10 +580,6 @@ form #submit {
 
   /*---------Hero----------*/
 
-  .first {
-    padding: 5rem 0 4rem 3rem;
-  }
-
   .first p {
     margin-right: 2rem;
   }
@@ -591,9 +587,8 @@ form #submit {
     font-size: 3.2rem;
   }
 
-  .first-image, .second-image {
-    width: 100%;
-    height: fit-content;
+  .images {
+    width: 46rem;
   }
 
   /*-------Brand SECTION---------*/
@@ -658,6 +653,7 @@ form #submit {
 
   .first {
     grid-template-columns: 1fr;
+    gap: 3rem;
   }
 
   .first__column {
@@ -768,7 +764,7 @@ form #submit {
   }
 
   .first {
-    padding: 5rem 0 3rem 1rem;
+    padding: 5rem 0 5rem 1rem;
     position: relative;
   }
 
@@ -811,7 +807,6 @@ form #submit {
 @media screen and (max-width: 400px) {
   .first {
     height: fit-content;
-    gap: 1rem;
   }
 
   .first__column {
