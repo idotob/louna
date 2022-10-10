@@ -859,9 +859,21 @@ form #submit {
   }
 
   /*------People using our platform (fifth)------*/
+  .people__all {
+    gap: 0;
+  }
+  
   .people__lists {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+  
+  .people__list {
+    gap: 0;
+  }
+  
+  .people__list article h3 {
+    margin-top: 3rem;
   }
 
   .people__list article p {
