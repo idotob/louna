@@ -172,6 +172,7 @@ img {
   grid-template-columns: 40% 60%;
   padding: 6rem 0 6rem 5rem;
   gap: 2rem;
+  min-height: 30rem;
 }
 
 .first h1 {
@@ -767,8 +768,6 @@ form #submit {
   }
 
   .first {
-    grid-template-columns: 1fr;
-    grid-template-rows: 50% 50%;
     padding: 5rem 0 3rem 1rem;
     position: relative;
   }
@@ -811,7 +810,7 @@ form #submit {
 /*------------SMALLER PHONES---------*/
 @media screen and (max-width: 400px) {
   .first {
-    height: 100%;
+    height: fit-content;
     gap: 1rem;
   }
 
