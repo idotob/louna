@@ -193,6 +193,7 @@ img {
   width: 54rem;
 }
 
+
 /*----------------- Brand Section (Second section)------------------*/
 .second {
   display: grid;
@@ -220,6 +221,7 @@ img {
   grid-template-columns: 35% 65%;
   gap: 7rem;
   align-content: center;
+  
 }
 
 .right-column {
@@ -554,6 +556,7 @@ form #submit {
   .plan__list {
     padding: 2rem 1.8rem 3rem;
   }
+
 }
 
 /*----------TABLET VIEW-----------*/
@@ -563,6 +566,7 @@ form #submit {
     font-size: .9rem;
   }
 
+
   /*---------Navigation----------*/
   .logo {
     font-size: 1.1rem;
@@ -571,13 +575,13 @@ form #submit {
   .menu__li {
     gap: 3rem;
   }
-  
+
+
   /*---------Hero----------*/
 
   .first p {
     margin-right: 2rem;
   }
-  
   .first h1 {
     font-size: 3.2rem;
   }
@@ -634,6 +638,8 @@ form #submit {
   }
 }
 
+
+
 /*---------- SMALLER TABLET-----------*/
 @media screen and (max-width: 700px) {
   .uil.uil-bars {
@@ -649,7 +655,16 @@ form #submit {
   }
 
   .first__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
     padding-right: 3rem;
+  }
+
+  .first__column p {
+    margin-right: 0;
   }
 
   .second__column {
@@ -771,6 +786,10 @@ form #submit {
     padding: 0;
   }
 
+  .second-image {
+    display: none;
+  }
+
   /*--------How we will help you (Fourth)-------*/
   .help__list {
     padding: 0;
@@ -779,6 +798,7 @@ form #submit {
   .help__list article:hover {
     transform: none;
   }
+
 
   /*---------Brand Asset (Second)-----------*/
   .second {
@@ -801,14 +821,6 @@ form #submit {
 @media screen and (max-width: 400px) {
   .first {
     height: fit-content;
-  }
-
-  .first__column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    text-align: center;
   }
 
   .first__column p {
@@ -835,6 +847,7 @@ form #submit {
     width: 30rem;
   }
 
+
   /*------Why choose us (third)------*/
   .left-column img {
     width: 280px;
@@ -849,16 +862,16 @@ form #submit {
   .people__all {
     gap: 0;
   }
-  
+
   .people__lists {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  
+
   .people__list {
     gap: 0;
   }
-  
+
   .people__list article h3 {
     margin-top: 3rem;
   }
@@ -877,6 +890,7 @@ form #submit {
   .team__list {
     grid-template-columns: 1fr;
   }
+
 
   /*------Testimonial (Eigth)------*/
   .info-star {
