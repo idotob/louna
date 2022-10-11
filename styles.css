@@ -776,8 +776,9 @@ form #submit {
   }
 
  .images {
-    width: 35rem;
+    width: 32rem;
     gap: .5rem;
+    margin: auto;
  }
 
   .second__column {
@@ -830,7 +831,7 @@ form #submit {
   }
 
   .people__list article h3 {
-    margin-top: 3rem;
+    margin-top: 4rem;
   }
 
   .people__list article p {
