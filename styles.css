@@ -776,7 +776,7 @@ form #submit {
   }
 
  .images {
-    width: 38rem;
+    width: 35rem;
     gap: .5rem;
  }
 
@@ -784,10 +784,6 @@ form #submit {
     grid-row: 1;
     margin: 0;
     padding: 0;
-  }
-
-  .second-image {
-    display: none;
   }
 
   /*--------How we will help you (Fourth)-------*/
@@ -890,7 +886,7 @@ form #submit {
   }
 
   .images {
-    width: 30rem;
+    width: 28rem;
   }
 
   /*------Testimonial (Eigth)------*/
