@@ -193,7 +193,6 @@ img {
   width: 54rem;
 }
 
-
 /*----------------- Brand Section (Second section)------------------*/
 .second {
   display: grid;
@@ -555,7 +554,6 @@ form #submit {
   .plan__list {
     padding: 2rem 1.8rem 3rem;
   }
-
 }
 
 /*----------TABLET VIEW-----------*/
@@ -565,7 +563,6 @@ form #submit {
     font-size: .9rem;
   }
 
-
   /*---------Navigation----------*/
   .logo {
     font-size: 1.1rem;
@@ -574,13 +571,13 @@ form #submit {
   .menu__li {
     gap: 3rem;
   }
-
-
+  
   /*---------Hero----------*/
 
   .first p {
     margin-right: 2rem;
   }
+  
   .first h1 {
     font-size: 3.2rem;
   }
@@ -637,8 +634,6 @@ form #submit {
   }
 }
 
-
-
 /*---------- SMALLER TABLET-----------*/
 @media screen and (max-width: 700px) {
   .uil.uil-bars {
@@ -665,7 +660,6 @@ form #submit {
     gap: 1rem;
     width: 50rem;
   }
-
 
   .menu__li {
     display: none;
@@ -739,8 +733,6 @@ form #submit {
   }
 }
 
-
-
 /*----------MOBILE VIEW-----------*/
 @media screen and (max-width: 550px) {
   .logo__nav {
@@ -788,7 +780,6 @@ form #submit {
     transform: none;
   }
 
-
   /*---------Brand Asset (Second)-----------*/
   .second {
     grid-template-columns: repeat(2, 1fr);
@@ -805,8 +796,6 @@ form #submit {
     padding: 3rem 1rem 6rem;
   }
 }
-
-
 
 /*------------SMALLER PHONES---------*/
 @media screen and (max-width: 400px) {
@@ -838,7 +827,6 @@ form #submit {
     font-size: 1.2rem;
   }
 
-
   .logo__nav {
     padding: 1rem;
   }
@@ -846,7 +834,6 @@ form #submit {
   .images {
     width: 30rem;
   }
-
 
   /*------Why choose us (third)------*/
   .left-column img {
@@ -890,7 +877,6 @@ form #submit {
   .team__list {
     grid-template-columns: 1fr;
   }
-
 
   /*------Testimonial (Eigth)------*/
   .info-star {
