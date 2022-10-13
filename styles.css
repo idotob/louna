@@ -650,7 +650,8 @@ form #submit {
     display: block;
     background: var(--lightgreen);
     border: none;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    color: var(--main);
   }
 
   .first {
