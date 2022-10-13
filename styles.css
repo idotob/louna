@@ -645,7 +645,7 @@ form #submit {
 
 
 /*---------- SMALLER TABLET-----------*/
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   #menu__icon {
     display: block;
     background: var(--lightgreen);
