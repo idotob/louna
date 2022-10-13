@@ -121,6 +121,9 @@ img {
   font-size: .875rem;
 }
 
+#menu__icon {
+  display: none;
+
 .uil.uil-bars {
   display: none;
 }
@@ -646,6 +649,12 @@ form #submit {
 
 /*---------- SMALLER TABLET-----------*/
 @media screen and (max-width: 700px) {
+  #menu__icon {
+    display: content;
+    background-color: transparent;
+    font-sizeL 1.5rem;
+  }
+  
   .uil.uil-bars {
     display: block;
     font-size: 1.6rem;
