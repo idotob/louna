@@ -76,6 +76,10 @@ p {
   line-height: 200%;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   display: block;
   width: 100%;
