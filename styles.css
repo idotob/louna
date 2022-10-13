@@ -76,15 +76,15 @@ p {
   line-height: 200%;
 }
 
-a {
-  text-decoration: none;
-}
-
 img {
   display: block;
   width: 100%;
   object-fit: cover;
   height: fit-content;
+}
+
+a {
+  text-decoration: none;
 }
 
 .logo {
@@ -121,7 +121,7 @@ img {
   font-size: .875rem;
 }
 
-#menu__icon {
+.uil.uil-bars {
   display: none;
 }
 
@@ -560,6 +560,7 @@ form #submit {
   .plan__list {
     padding: 2rem 1.8rem 3rem;
   }
+
 }
 
 /*----------TABLET VIEW-----------*/
@@ -569,6 +570,7 @@ form #submit {
     font-size: .9rem;
   }
 
+
   /*---------Navigation----------*/
   .logo {
     font-size: 1.1rem;
@@ -577,6 +579,7 @@ form #submit {
   .menu__li {
     gap: 3rem;
   }
+
 
   /*---------Hero----------*/
 
@@ -639,12 +642,13 @@ form #submit {
   }
 }
 
+
+
 /*---------- SMALLER TABLET-----------*/
 @media screen and (max-width: 700px) {
-  #menu__icon {
-    display: content;
-    background: var(--lightgreen);
-    font-sizeL 1.6rem;
+  .uil.uil-bars {
+    display: block;
+    font-size: 1.6rem;
     color: var(--main);
     border: none;
   }
@@ -762,6 +766,10 @@ form #submit {
     padding: 5rem 1rem 5rem;
   }
 
+  .third {
+    margin-top: -2rem;
+  }
+
   /*----------Hero Section-----------*/
   .first h1 {
     font-size: 2.2rem;
@@ -800,14 +808,6 @@ form #submit {
   .brand-asset img {
     width: 130px;
   }
-  
-  .second {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .third {
-    margin-top: -3rem;
-  }
 
   /*--------How we will help you (Fourth)-------*/
   .help__list {
@@ -817,7 +817,12 @@ form #submit {
   .help__list article:hover {
     transform: none;
   }
-  
+
+  /*---------Brand Asset (Second)-----------*/
+  .second {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   /*---------Why choose us section (Third)-----------*/
   .right-column p {
     margin: 1rem 1.5rem 3rem;
