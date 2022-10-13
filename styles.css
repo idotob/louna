@@ -646,11 +646,15 @@ form #submit {
 
 /*---------- SMALLER TABLET-----------*/
 @media screen and (max-width: 800px) {
+  .logo__nav {
+    align-items: center;
+  }
+  
   #menu__icon {
     display: block;
     background: var(--lightgreen);
     border: none;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: var(--main);
   }
 
