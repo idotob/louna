@@ -645,12 +645,12 @@ form #submit {
 
 
 /*---------- SMALLER TABLET-----------*/
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   #menu__icon {
     display: block;
-    font-size: 1.6rem;
-    color: var(--main);
+    background: var(--lightgreen);
     border: none;
+    font-size: 1.6rem;
   }
 
   .first {
