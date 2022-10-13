@@ -804,6 +804,10 @@ form #submit {
   .second {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .third {
+    margin-top: -2rem;
+  }
 
   /*--------How we will help you (Fourth)-------*/
   .help__list {
