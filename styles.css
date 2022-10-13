@@ -652,12 +652,7 @@ form #submit {
   #menu__icon {
     display: content;
     background-color: transparent;
-    font-sizeL 1.5rem;
-  }
-  
-  .uil.uil-bars {
-    display: block;
-    font-size: 1.6rem;
+    font-sizeL 1.6rem;
     color: var(--main);
     border: none;
   }
